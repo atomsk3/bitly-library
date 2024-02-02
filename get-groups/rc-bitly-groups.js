@@ -4,7 +4,7 @@
 const axios = require('axios'); // Axios for HTTP requests
 const fs = require('fs');       // File system module for file operations
 
-// Bitly API credentials: Replace placeholders with actual values
+// Bitly API credentials
 const bitlyToken = ''; // Your Bitly access token
 
 // Configuring Axios for Bitly API requests
@@ -24,7 +24,7 @@ async function getGroups() {
     }
 }
 
-// Main function to forcefully guide operations
+// Main function to guide operations
 async function main() {
     const groups = await getGroups(); // Await the groups data from getGroups function
     
@@ -38,4 +38,4 @@ async function main() {
     });
 }
 
-main(); // Forcefully execute the main function :)
+main(); // Execute the main function :)
